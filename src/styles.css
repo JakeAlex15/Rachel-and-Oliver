@@ -33,7 +33,7 @@
     font-size: 25px;
   }
 
- .card-header {
+ .jumbotron {
     float: none;
     background-repeat: no-repeat;
     background-position: center center;
@@ -63,7 +63,14 @@ h3 {
     text-shadow: 2px 2px  rgba(0, 0, 0, 0.178);
 }
 
-.containers {
+video {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-basis: auto;
+}
+
+.note-container {
     background-color: rgb(253, 236, 224);
     height: 26rem;
     padding-top: 2rem;
@@ -84,18 +91,12 @@ h3 {
     font-weight: bold;
 }
 
-.intro5 {
+.intro3 {
     text-align: center;
     font-size: 1.5rem;
     padding-top: 2rem;
     font-family: 'Dancing Script', cursive !important;
     font-weight: bold;
-}
- 
-.title {
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    font-family: 'Dancing Script', cursive !important;
 }
  
 a {
@@ -104,30 +105,38 @@ a {
     color: black;
 }
 
-  /* 
-  body
-  */
-
 .flex-container {
     display: flex;
 
 }
 
+.title {
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive !important;
+    text-justify: auto;
+}
+
+.subtitle {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive !important;
+}
+ 
 .card-day-1 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.596);
     position: absolute;
-    right: 55%; /*45.8rem */
-    top: 85rem; /*135rem */
-    flex: 100; /* 40% */
+    right: 52%; 
+    top: 85rem; 
+    height: 43.7rem;
+    width: 30rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
     text-align: center;
     background-color:  rgb(253, 236, 224);
     border: solid;
-}
-
-.day-1-text {
-    font-size: 2rem;
-    font-family: 'Dancing Script', cursive !important;
-    text-justify: auto;
 }
 
 .cp-day-1 {
@@ -137,14 +146,16 @@ a {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 43.7rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    height: 44rem;
     width: 30rem;
     background-image: url('cp-day-1.jpg');
-    margin-left: auto;
-    margin-right: auto;
     position: absolute;
     top: 85rem;
-    left: 50%;
+    left: 52%;
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
     transition: 0.3s;
 }
@@ -152,19 +163,13 @@ a {
 .card-day-2 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.596);
     position: absolute;
-    left: 45.8%;
+    left: 52%;
     top: 135rem;
-    height: 86.5%;
-    width: 50%;
+    height: 43.7rem;
+    width: 30rem;
     text-align: center;
     background-color:  rgb(253, 236, 224);
     border: solid;
-}
-
-.day-2 {
-    font-size: 2rem;
-    font-family: 'Dancing Script', cursive !important;
-    text-justify: auto;
 }
 
 .cp-day-2 {
@@ -175,15 +180,15 @@ a {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 44.7rem;
-    width: 20rem;
+    height: 44rem;
+    width: 30rem;
     background-image: url('Image.jpeg');
     display: block;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
     top: 135rem;
-    right: 42.5rem;
+    right: 52%;
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
     transition: 0.3s;
 }
@@ -200,24 +205,13 @@ a {
     background-color: rgb(253, 236, 224);
   }
 
- .info-day-1 {
+ .info-text {
     font-size: 2rem;
     font-family: 'Dancing Script', cursive !important;
     text-justify: auto;
 }
-.picture-footer {
-    float: none;
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-     background-image: url(c4.jpg); /* bf2 */
-     height: 100rem;
-     width: 100%;
- }
- .info-day-1 a {
+
+ .info-text a {
     float: none;
     align-items: center;
     color: rgb(0, 0, 0);

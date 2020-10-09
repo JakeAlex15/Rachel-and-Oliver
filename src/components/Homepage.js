@@ -6,14 +6,14 @@ export default function Homepage() {
     return (
         <>
             <Card>
-                <div className="card-header">
+                <div className="jumbotron">
                     <h1>Rachel and Oliver</h1>    
                     <h3>November 1st, 2021 -- Key West, Flordia</h3>
                 </div>
             </Card>
                 <div className="main">
             <Card>
-                <div className="containers">
+                <div className="note-container">
                             <span className="intro1">
                                 <p>
                                     Dear Family and Friends, <br /> <br />
@@ -36,7 +36,7 @@ export default function Homepage() {
                                     See you in Florida!! <br /> <br />
                                 </p>
                             </span>
-                            <span className="intro5">
+                            <span className="intro3">
                                 <p>
                                     All Love, <br/>
                                     Rachel and Oliver 
@@ -51,28 +51,31 @@ export default function Homepage() {
 
             <div className="flex-container">
                         <span className="card-day-1">  
-                        <span className="day-1-text">
+                        <span className="title">
                             <br />          
                                 Pre-Wedding Schedule
                        
-                            <p className="title">
-                                October 31st, 2021
+                            <p className="subtitle">
+                                November 9-10th, 2021
                             </p>
                         </span>
                         </span>
                         <span className="cp-day-1"></span>
                     </div>
              
-            <div className="info-container">
-                        <span className="card-day-2"></span>
-                        <span className="day-2">
-                            The Big Day!
-                        </span>
-                            <p className="title">
-                                November 1st, 2021
+                    <div className="flex-container">
+                        <span className="card-day-2">  
+                        <span className="title">
+                            <br />          
+                                The Big Day!
+                       
+                            <p className="subtitle">
+                                November 11th, 2021
                             </p>
+                        </span>
+                        </span>
                         <span className="cp-day-2"></span>
-            </div>
+                    </div>
 
                         <video className='videoTag' autoPlay loop muted>
                             <source src={waterbg} type='video/mp4' />
@@ -80,7 +83,7 @@ export default function Homepage() {
                     
             <div className="flex-container">
                         <div className="info">
-                            <div className="info-day-1">
+                            <div className="info-text">
                                 <h2> 
                                     <br />
                                     Information 
@@ -94,10 +97,6 @@ export default function Homepage() {
                             </div>
                         </div>
             </div>
-            <div className="container">
-                    <span className="picture-footer"></span>
-                    <h1> hello </h1>
-                </div>
         </div>
         </>
     );
@@ -107,4 +106,3 @@ export default function Homepage() {
 //spacing
 //fill in 'day before' and 'day of' cards
 //info card -- things to do, hotels, travel, rsvp (google form)
-//height = auto
