@@ -1,9 +1,11 @@
-
-
 * {
     border: 0;
     padding: 0;
     margin: 0;
+}
+
+body {
+    font-size: 10px;
 }
 /*
 .main {
@@ -55,16 +57,28 @@ nav {
       cursor: pointer;
   }
 
-  @media only screen and (max-width: 700px) {
-    nav ul{
-       height: 20rem;
-       flex-direction: column;
-       text-align: center;
-      }
-      /* nav collapsing into a column but not showing */
-  }
+  .note-container {
+    background-color: rgb(253, 236, 224);
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bold;
+}
+
+.note-intro {
+    padding: 1.25em;
+}
 
   @media only screen and (max-width: 700px) {
+
+    nav ul{
+        height: 20rem;
+        flex-direction: column;
+        text-align: center;
+       }
+       /* nav collapsing into a column but not showing */
+
       .jumbotron {
           height: 28rem;
           width: 50%;
@@ -78,21 +92,7 @@ nav {
           display: flex;
           text-align: center;
       }
-  }
 
-  @media only screen and (max-width: 700px) {
-      .note-container {
-        background-color: rgb(253, 236, 224);
-        width: 100%;
-        text-align: center;
-        flex-direction: column;
-        display: flex;
-        flex-wrap: wrap;
-      }
-  }
-  
-
-  @media only screen and (max-width: 700px) {
       .card-day-1 {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.596);
         right: 52%; 
@@ -107,27 +107,28 @@ nav {
         display: flex;
         flex-direction: column;
       }
-    }
 
-    @media only screen and (max-width: 700px) {
-        .cp-day-1 {
-            background-repeat: no-repeat;
-            background-position: center center;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            flex-direction: column;
-            flex-wrap: wrap;
-            height: 22rem;
-            width: 15rem;
-            background-image: url('cp-day-1.jpg');
-            top: 85rem;
-            left: 52%;
-            box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
-            transition: 0.3s;
-        }
+      .cp-day-1 {
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 22rem;
+        width: 15rem;
+        background-image: url('cp-day-1.jpg');
+        top: 85rem;
+        left: 52%;
+        box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+        transition: 0.3s;
     }
+  }
+
+
+  
 
  .jumbotron {
     background-repeat: no-repeat;
@@ -165,14 +166,7 @@ h3 {
     display: flex;
 }
 
-.note-container {
-    background-color: rgb(253, 236, 224);
-    width: 100%;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: bold;
-}
+
 
  
 a {
