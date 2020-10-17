@@ -83,8 +83,6 @@ nav {
   @media only screen and (max-width: 700px) {
       .note-container {
         background-color: rgb(253, 236, 224);
-        height: 20rem;
-        padding-top: 2rem;
         width: 100%;
         text-align: center;
         flex-direction: column;
@@ -93,44 +91,6 @@ nav {
       }
   }
   
-
-  /* @media only screen and (max-width: 700px) {
-    .intro1 {
-        text-align: center;
-        font-size: 0.5rem;
-        font-family: 'Open Sans Condensed', sans-serif;
-        font-weight: bold;
-        flex-direction: column;
-        flex-wrap: wrap;
-        display: flex;
-    }
-  }
-
-  @media only screen and (max-width: 700px) {
-    .intro2 {
-        text-align: center;
-        font-size: 0.5rem;
-        padding-top: 2rem;
-        font-family: 'Open Sans Condensed', sans-serif;
-        font-weight: bold;
-        flex-direction: column;
-        flex-wrap: wrap;
-        display: flex;
-    }
-  }
-
-  @media only screen and (max-width: 700px) {
-    .intro3 {
-        text-align: center;
-        font-size: 0.5rem;
-        padding-top: 2rem;
-        font-family: 'Open Sans Condensed', sans-serif;
-        font-weight: bold;
-        flex-direction: column;
-        flex-wrap: wrap;
-        display: flex;
-    }
-  } */
 
   @media only screen and (max-width: 700px) {
       .card-day-1 {
@@ -207,32 +167,13 @@ h3 {
 
 .note-container {
     background-color: rgb(253, 236, 224);
-    height: 26rem;
-    padding-top: 2rem;
     width: 100%;
-    
-}
-.intro1 {
     text-align: center;
     font-size: 1.5rem;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: bold;
-}
-.intro2 {
-    text-align: center;
-    font-size: 1.5rem;
-    padding-top: 2rem;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: bold;
 }
 
-.intro3 {
-    text-align: center;
-    font-size: 1.5rem;
-    padding-top: 2rem;
-    font-family: 'Dancing Script', cursive !important;
-    font-weight: bold;
-}
  
 a {
     text-decoration: none;
