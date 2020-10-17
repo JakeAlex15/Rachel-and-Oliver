@@ -27,27 +27,27 @@ export default function Homepage() {
                                 </p>
                             
                 </div>    
-                    <div className="water-bg">
+                    {/* <div className="water-bg">
                         <video className='videoTag' autoPlay loop muted>
                             <source src={waterbg} type='video/mp4' />
                         </video>
-                    </div>
+                    </div> */}
 
-            <div className="flex-container">
-                        <span className="card-day-1">  
-                        <span className="title">
+            <div className="first-set">
+                        <div className="card-day-1">  
+                        <div className="title">
                             <br />          
                                 Pre-Wedding Schedule
                        
                             <p className="subtitle">
                                 November 9-10th, 2021
                             </p>
-                        </span>
-                        </span>
-                        <span className="cp-day-1"></span>
+                        </div>
+                        </div>
+                        <div className="cp-day-1"></div>
                     </div>
              
-                    <div className="flex-container">
+                    <div className="second-set">
                         <span className="card-day-2">  
                         <span className="title">
                             <br />          
@@ -61,11 +61,11 @@ export default function Homepage() {
                         <span className="cp-day-2"></span>
                     </div>
 
-                        <div className="water-bg">
+                        {/* <div className="water-bg">
                         <video className='videoTag' autoPlay loop muted>
                             <source src={waterbg} type='video/mp4' />
                         </video>
-                    </div> 
+                    </div>  */}
             
             <div className="flex-container">
                         <div className="info">
