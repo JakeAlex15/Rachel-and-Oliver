@@ -66,13 +66,43 @@ nav {
     font-weight: bold;
 }
 
+.note-intro {
+    padding: 1.25em;
+}
+
 .first-set {
     display: flex;
     flex-direction: row;
 }
 
-.note-intro {
-    padding: 1.25em;
+
+.card-day-1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.596);
+    justify-content: space-evenly;
+    align-items: stretch;
+    text-align: center;
+    background-color:  rgb(253, 236, 224);
+    border: solid;
+    width: 100%;
+    margin: auto;
+    height: auto;
+}
+
+.cp-day-1 {
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    justify-content: space-evenly;
+    align-items: stretch;
+    height: auto;
+    width: 100%;
+    background-image: url('cp-day-1.jpg');
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    transition: 0.3s;
+
 }
 
   @media only screen and (max-width: 700px) {
@@ -190,43 +220,7 @@ a {
     font-family: 'Dancing Script', cursive !important;
 }
  
-.card-day-1 {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.596);
-    position: absolute;
-    right: 52%; 
-    top: 85rem; 
-    height: 43.7rem;
-    width: 30rem;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: stretch;
-    flex-wrap: wrap;
-    text-align: center;
-    background-color:  rgb(253, 236, 224);
-    border: solid;
-}
 
-.cp-day-1 {
-    background-repeat: no-repeat;
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: stretch;
-    height: 44rem;
-    width: 30rem;
-    background-image: url('cp-day-1.jpg');
-    position: absolute;
-    top: 85rem;
-    left: 52%;
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
-    transition: 0.3s;
-}
 
 .card-day-2 {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.596);
