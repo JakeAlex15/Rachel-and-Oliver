@@ -97,7 +97,7 @@ nav {
     background-size: cover;
     justify-content: space-evenly;
     align-items: stretch;
-    height: auto;
+    height: 22rem;
     width: 100%;
     background-image: url('cp-day-1.jpg');
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
@@ -134,10 +134,6 @@ nav {
 
       .card-day-1 {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.596);
-        right: 52%; 
-        top: 85rem; 
-        height: 21rem;
-        width: 15rem;
         text-align: center;
         background-color:  rgb(253, 236, 224);
         border: solid;
@@ -150,11 +146,7 @@ nav {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        height: 22rem;
-        width: 15rem;
         background-image: url('cp-day-1.jpg');
-        top: 85rem;
-        left: 52%;
         box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
         transition: 0.3s;
     }
