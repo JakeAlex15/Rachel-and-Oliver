@@ -1,3 +1,5 @@
+
+
 * {
     border: 0;
     padding: 0;
@@ -14,36 +16,172 @@
 }
 */
 
-#navbar {
+nav {
     overflow: hidden;
-    height: 2rem;
+    height: 2.2rem;
     padding-top: 20px;
     text-align: center;
     background-color: rgb(253, 236, 224);
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
   }
 
-  #navbar a {
-    float: none;
-    align-items: center;
+  nav ul {
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      list-style: none;
+  }
+
+  nav ul li a {
     color: rgb(0, 0, 0);
     text-align: center;
-    padding: 5rem;
+    padding: 8rem;
     text-decoration: none;
     font-family: 'Dancing Script', cursive !important;
     font-size: 25px;
+
+    /* nav spacing is weird, need help */
   }
 
+  nav ul li :hover {
+      
+      transition: 0.5s;
+      color: rgb(109, 0, 252);
+      font-weight: bold;
+      cursor: pointer;
+  }
+
+  @media only screen and (max-width: 700px) {
+    nav ul{
+       height: 20rem;
+       flex-direction: column;
+       text-align: center;
+      }
+      /* nav collapsing into a column but not showing */
+  }
+
+  @media only screen and (max-width: 700px) {
+      .jumbotron {
+          height: 28rem;
+          width: 50%;
+          flex-direction: column;
+          background-repeat: no-repeat;
+          background-position: center center;
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flexbox;
+          display: -o-flex;
+          display: flex;
+          text-align: center;
+      }
+  }
+
+  @media only screen and (max-width: 700px) {
+      .note-container {
+        background-color: rgb(253, 236, 224);
+        height: 20rem;
+        padding-top: 2rem;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+      }
+  }
+  
+
+  /* @media only screen and (max-width: 700px) {
+    .intro1 {
+        text-align: center;
+        font-size: 0.5rem;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-weight: bold;
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: flex;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .intro2 {
+        text-align: center;
+        font-size: 0.5rem;
+        padding-top: 2rem;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-weight: bold;
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: flex;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .intro3 {
+        text-align: center;
+        font-size: 0.5rem;
+        padding-top: 2rem;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-weight: bold;
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: flex;
+    }
+  } */
+
+  @media only screen and (max-width: 700px) {
+      .card-day-1 {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.596);
+        right: 52%; 
+        top: 85rem; 
+        height: 21rem;
+        width: 15rem;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+        background-color:  rgb(253, 236, 224);
+        border: solid;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    @media only screen and (max-width: 700px) {
+        .cp-day-1 {
+            background-repeat: no-repeat;
+            background-position: center center;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: 22rem;
+            width: 15rem;
+            background-image: url('cp-day-1.jpg');
+            top: 85rem;
+            left: 52%;
+            box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+            transition: 0.3s;
+        }
+    }
+
  .jumbotron {
-    float: none;
     background-repeat: no-repeat;
     background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
     background-size: cover;
      text-align: center;
-     background-image: url(prop.jpg); /* bf2 */
-     height: 45rem;
+     background-image: url(prop.jpg);
+     height: 48rem;
      width: 100%;
  }
 
@@ -63,11 +201,8 @@ h3 {
     text-shadow: 2px 2px  rgba(0, 0, 0, 0.178);
 }
 
-video {
+.videoTag {
     display: flex;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    flex-basis: auto;
 }
 
 .note-container {
@@ -221,3 +356,18 @@ a {
     font-size: 30px;
     text-justify: auto;
  }
+
+ .water-bg {
+    background-repeat: no-repeat;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
+    background-size: cover;
+ }
+
+ /* $desktop: 1200px;
+$laptop: 1024px;
+$tablet: 768px;
+$phone: 480px; */

@@ -8,7 +8,7 @@ export default function Homepage() {
             <Card>
                 <div className="jumbotron">
                     <h1>Rachel and Oliver</h1>    
-                    <h3>November 1st, 2021 -- Key West, Flordia</h3>
+                    <h3>November 11th, 2021 -- Key West, Flordia</h3>
                 </div>
             </Card>
                 <div className="main">
@@ -44,10 +44,11 @@ export default function Homepage() {
                             </span>
                 </div>   
             </Card>  
-
+                    <div className="water-bg">
                         <video className='videoTag' autoPlay loop muted>
                             <source src={waterbg} type='video/mp4' />
                         </video>
+                    </div>
 
             <div className="flex-container">
                         <span className="card-day-1">  
@@ -77,10 +78,12 @@ export default function Homepage() {
                         <span className="cp-day-2"></span>
                     </div>
 
+                        <div className="water-bg">
                         <video className='videoTag' autoPlay loop muted>
                             <source src={waterbg} type='video/mp4' />
                         </video>
-                    
+                    </div> 
+            
             <div className="flex-container">
                         <div className="info">
                             <div className="info-text">
@@ -90,12 +93,12 @@ export default function Homepage() {
                                 </h2>
                                 <br />
                                 <br />
-                                    <a href="rsvp-form" class="rsvp-button">Activites</a>
-                                    <a href="rsvp-form" class="rsvp-button">Hotels</a>
-                                    <a href="rsvp-form" class="rsvp-button">Travel</a>
-                                    <a href="rsvp-form" class="rsvp-button">RSVP</a>
-                            </div>
-                        </div>
+                                    <a href="rsvp-form" className="activities-button">Activites</a> {/* https://www.tripadvisor.com/Attractions-g34345-Activities-Key_West_Florida_Keys_Florida.html */}
+                                    <a href="rsvp-form" className="hotels-button">Hotels</a> {/* https://www.tripadvisor.com/Hotels-g34345-Key_West_Florida_Keys_Florida-Hotels.html */}
+                                    <a href="rsvp-form" className="travel-button">Travel</a>
+                                    <a href="rsvp-form" className="rsvp-button">RSVP</a>
+                    </div>
+                </div>
             </div>
         </div>
         </>

@@ -4,12 +4,22 @@ import React, { Component } from 'react';
 export default class Navbar extends Component {
     render() {
         return(
-            <div id="navbar">
-            <a href="#welcome">Welcome</a>
-            <a href="#schedules">Schedules</a>
-            <a href="#info">Information</a>
-            <a href="#rsvp">RSVP</a>
-          </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#welcome">Welcome</a>
+                    </li>
+                    <li>
+                        <a href="#schedules">Schedules</a>
+                    </li>
+                    <li>
+                        <a href="#info">Information</a>
+                    </li>
+                    <li>
+                        <a href="#rsvp">RSVP</a>
+                    </li>
+                </ul>
+            </nav>
         );
     }
 }
