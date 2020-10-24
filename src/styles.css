@@ -7,34 +7,49 @@
 body {
     font-size: 10px;
     background: cadetblue;
+    font-family: 'Dancing Script', cursive !important;
 }
 
-.water-bg {
-    background-repeat: no-repeat;
-	background-position: center center;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flexbox;
-	display: -o-flex;
-    display: flex;
-    background-size: cover;
-    position: absolute;
+h1 {
+	padding-top: 4rem;
+	font-size: 4rem;
+	color: rgb(0, 0, 0);
+	text-shadow: 2px 2px rgb(253, 236, 224);
 }
+
+h3 {
+	font-size: 2rem;
+	color: rgb(0, 0, 0);
+	padding-top: 30px;
+	text-shadow: 2px 2px rgb(253, 236, 224);
+}
+
+h5 {
+    font-size: 4em;
+}
+
+a {
+	text-decoration: none;
+	font-size: 22px;
+    color: black;
+    line-height: 1em;
+}
+
+
+/* Navbar styling */
 
 .topnav {
-	overflow: hidden;
-	height: 2.2rem;
-	padding-top: 20px;
-	text-align: center;
-	background-color: rgb(253, 236, 224);
-	justify-content: center;
-	list-style: none;
+    display: flex;
+    text-align: space-evenly;
+    background-color: rgb(253, 236, 224);
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 2em;
 }
 
 .topnav a {
 	color: rgb(0, 0, 0);
 	text-align: center;
-	padding: 8rem;
 	text-decoration: none;
 	font-family: 'Dancing Script', cursive !important;
 	font-size: 25px;
@@ -56,6 +71,8 @@ body {
     left: 0;
   }
 
+  /* Jumbotron styling */
+
 .jumbotron {
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -72,28 +89,7 @@ body {
 	width: 100%;
 }
 
-h1 {
-	padding-top: 4rem;
-	font-family: 'Dancing Script', cursive !important;
-	font-size: 4rem;
-	color: rgb(0, 0, 0);
-	text-shadow: 2px 2px rgb(253, 236, 224);
-}
-
-h3 {
-	font-family: 'Dancing Script', cursive !important;
-	font-size: 2rem;
-	color: rgb(0, 0, 0);
-	padding-top: 30px;
-	text-shadow: 2px 2px rgb(253, 236, 224);
-}
-
-a {
-	text-decoration: none;
-	font-size: 22px;
-    color: black;
-    line-height: 1em;
-}
+/* Note container styling (message from bride/groom) */
 
 .note-container {
 	background-color: rgb(253, 236, 224);
@@ -101,95 +97,89 @@ a {
 	text-align: center;
 	font-size: 2.5em;
 	font-family: 'Dancing Script', cursive !important;
-	font-weight: bold;
+    font-weight: bold;
 }
 
 .note-intro {
-	padding: 1.25em;
+    padding: 1.25em;
+    max-width: 700px;
+    margin: auto;
 }
 
-.title {
-	font-size: 30px;
-	font-family: 'Dancing Script', cursive !important;
-	text-justify: auto;
-}
+/* Schedule */
 
-.subtitle {
-	color: rgb(0, 0, 0);
-	font-size: 25px;
-	font-family: 'Dancing Script', cursive !important;
-}
-
-.first-set {
-	display: flex;
+.first-set, .second-set {
+    display: flex;
     flex-direction: row;
     margin-top: 2em;
-}
-
-.card-day-1 {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.596);
-	text-align: center;
-	background-color: rgb(253, 236, 224);
-	border: solid;
-	width: 100%;
-	margin: auto;
-	height: auto;
-    padding: 4em;
-    margin-left: 2em;
-    margin-right: 4em;
+    max-width: 1200px;
+    margin: 5em auto;
 }
 
 .cp-day-1 {
-	background-repeat: no-repeat;
-	background-position: center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	height: 47.5rem;
-	width: 100%;
-	background-image: url('cp-day-1.jpg');
-	box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    background-image: url(/static/media/cp-day-1.9e341fac.jpg);
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
     transition: 0.3s;
-    margin-left: 4em;
+    max-width: 50%;
     margin-right: 2em;
 }
 
-.second-set {
-    display: flex;
-    flex-direction: row;
-    margin-top: 4em;
+.card-day-1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.596);
+    text-align: center;
+    background-color: rgb(253, 236, 224);
+    margin: auto;
+    height: auto;
+    max-width: 50%;
+    margin-left: 2em;
 }
 
 .card-day-2 {
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.596);
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.596);
-	text-align: center;
-	background-color: rgb(253, 236, 224);
-	border: solid;
-	width: 100%;
-	margin: auto;
-	height: auto;
-    padding: 4em;
-    margin-left: 4em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.596);
+    text-align: center;
+    background-color: rgb(253, 236, 224);
+    margin: auto;
+    height: auto;
+    max-width: 50%;
     margin-right: 2em;
 }
 
 .cp-day-2 {
-	background-repeat: no-repeat;
-	background-position: center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	height: 44rem;
-	width: 100%;
 	background-image: url('Image.jpeg');
-	box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+    width: 94%;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
     transition: 0.3s;
+    max-width: 50%;
     margin-left: 2em;
-    margin-right: 4em;
 }
+
+.schedule {
+    padding: 4em;
+}
+
+.schedule-date {
+    font-size: 2.70em ;
+}
+
+.schedule-itinerary {
+    font-size: 2.5em;
+}
+
+
+/* Times and locations - day of wedding */
+
+
+
+/* Info bar at bottom */
 
 .info {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.596);
@@ -224,7 +214,7 @@ a {
         text-align: center;
     }
     .jumbotron {
-		height: 28rem;
+		height: 70vh;
 		flex-direction: column;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -234,8 +224,7 @@ a {
 		display: -o-flex;
 		display: flex;
         text-align: center;
-        width: 100%; 
-        /* 65%, 74%, 91%, 100% not sure which one works */
+        width: 100%;
     }
     .note-container {
         flex-direction: column;
@@ -243,31 +232,32 @@ a {
         /* 65%, 74%, 91%, 100%  not sure which one works */
     }
     .first-set {
+        margin: 5em auto 0em auto;
+        display: flex;
         flex-direction: column;
-        
-	}
-    .cp-day-1 {
-        max-width: 700px;
-        margin-top: 2em;
-   
     }
+    
+    .cp-day-1, .cp-day-2 {
+        min-height: 600px;
+        min-width: 85%;
+        width: 100%;
+        margin: 5em auto;
+    }
+
 	.card-day-1 {
         max-width: 650px;
-        margin-top: 2em;
-        margin-left: 2em;
+        margin: auto;
 	}
 
     .second-set {
+        margin-top: 0;
+        display: flex;
         flex-direction: column-reverse;
     }
+
     .card-day-2 {
         max-width: 650px;
-        margin-top: 2em;
-        margin-left: 2em;
-    }
-    .cp-day-2 {
-        max-width: 700px;
-        margin-left: 2em;
+        margin: auto;
     }
 }
 
@@ -304,7 +294,6 @@ a {
 	}
 
 	.card-day-1 {
-        max-width: 285px;
         margin: 2em auto auto auto;
 	}
 
@@ -317,7 +306,6 @@ a {
         flex-direction: column-reverse;
     }
     .card-day-2 {
-        max-width: 285px;
         margin: 2em auto auto auto;
     }
     .cp-day-2 {
@@ -346,11 +334,9 @@ a {
 }
 
 /* 
-        ISSUES:
-    margin right not moving right
+    ISSUES:
     Nav not collapsing
     Nav Burger Button issue
-    Nav Link Clickboxes too large -- display: inline block not working
     Info Bar -- possibly
 */
 

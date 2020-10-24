@@ -9,9 +9,9 @@ export default class Navbar extends Component {
                 <a href="#schedules">Schedules</a>
                 <a href="#information">Information</a>
                 <a href="#RSVP">RSVP</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                {/* <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fas fa-bars"></i>
-            </a>
+                </a> */}
           </div>
         );
     }
