@@ -8,7 +8,7 @@ export default class Navbar extends Component {
                 <a href="#home" class="active">Welcome</a>
                 <a href="#schedules">Schedules</a>
                 <a href="#information">Information</a>
-                <a href="#RSVP">RSVP</a>
+                <a href="https://docs.google.com/forms/d/1g5aLWJqpFOTORj7MS9CpBWTCalJ1arjZSJPoTBaxc6M/" target="_blank" >RSVP</a>
                 {/* <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fas fa-bars"></i>
                 </a> */}
@@ -16,12 +16,3 @@ export default class Navbar extends Component {
         );
     }
 }
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }

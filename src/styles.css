@@ -120,9 +120,9 @@ a {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: auto;
+    height: auto; 
     width: 100%;
-    background-image: url(/static/media/cp-day-1.9e341fac.jpg);
+    background-image: url('cp-day-1.jpg');
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
     transition: 0.3s;
     max-width: 50%;
@@ -190,6 +190,8 @@ a {
 	text-align: center;
     background-color: rgb(253, 236, 224);
     margin-top: 8em;
+    display: flex;
+    flex-direction: row;
 }
 
 .info-text {
@@ -199,10 +201,9 @@ a {
 }
 
 .info-text a {
-    flex-direction: row;
 	color: rgb(0, 0, 0);
-	text-align: center;
-	padding: 6em;
+    text-align: center;
+	padding: 4em;
 	font-family: 'Dancing Script', cursive !important;
 	font-size: 30px;
 }
@@ -259,6 +260,19 @@ a {
         max-width: 650px;
         margin: auto;
     }
+
+    .info {
+        max-width: 634px;
+        display: flex;
+        margin: 4em 6em 4em 6em;
+        padding: 2em 1em 1em 1em;
+    }
+
+    .info-text {
+        padding: 2em;
+        flex-direction: column;
+        display: flex;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -313,32 +327,25 @@ a {
         max-width: 350px;
         padding-right: 2em;
     }
+
     .info {
         max-width: 300px;
-        margin: auto;
-        height: auto;
-        padding: 4em;
+        flex-direction: column;
+        padding: 1em;
         text-align: center;
-        background-color: rgb(253, 236, 224);
-        margin-top: 4em;
+        max-width: 355px;
+        height: auto;
+        margin: 0em;
         }
+
         .info-text {
-            flex-direction: column;
+            font-size: 1em;
         }
-        
-        .info-text a {
-            flex-direction: column;
-            font-size: 25px;
-           justify-self: left;
+
+        h2 {
+            font-size: 4em;
         }
 }
-
-/* 
-    ISSUES:
-    Nav not collapsing
-    Nav Burger Button issue
-    Info Bar -- possibly
-*/
 
 /* 
     $desktop: 1200px;
