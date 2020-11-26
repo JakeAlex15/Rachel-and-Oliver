@@ -263,11 +263,50 @@ font-size: 1.5em;
 }
 
 @media only screen and (max-width: 768px) {
-    nav ul {
-		height: 20rem;
-		flex-direction: column;
-        text-align: center;
+    span {
+        padding: 0px;
     }
+
+    h1 {
+        padding-top: 10px;
+        padding-bottom: 6rem;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+    
+    nav {
+        position: sticky;
+        top: 0px;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 5vh;
+        background: rgb(253, 236, 224);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        
+    }
+
+    nav ul li {
+        display: block;
+        line-height: 30px;
+        padding: 0em;
+    }
+
+    nav ul li a {
+        font-size: 30px;
+        
+    }
+   
+    #check:checked ~ ul {
+        left: 0;
+    }
+	
     .jumbotron {
 		height: 70vh;
 		flex-direction: column;
