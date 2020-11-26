@@ -1,18 +1,38 @@
 import React, { Component } from 'react';
 
+let navUI = document.querySelector("#nav-ul");
+let check = document.querySelector("#check");
+
+navUI.addEventListener("click", () => {
+    check.checked = !check.checked;
+});
 
 export default class Navbar extends Component {
     render() {
         return(
-            <div class="topnav" id="myTopnav">
-                <a href="#home" class="active">Welcome</a>
+            <nav>
+                <input type="checkbox" id="check"></input>
+                <label for ="check" className="checkbtn">
+                <i class="fas fa-bars"></i>
+                </label>
+            <ul id="nav-ul">
+            <li>
+                <a href="#welcome" className="active">Welcome</a>
+            </li>
+            <li>
                 <a href="#schedules">Schedules</a>
+            </li>
+            <li>
                 <a href="#information">Information</a>
-                <a href="https://docs.google.com/forms/d/1g5aLWJqpFOTORj7MS9CpBWTCalJ1arjZSJPoTBaxc6M/" target="_blank" >RSVP</a>
-                {/* <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fas fa-bars"></i>
-                </a> */}
-          </div>
+            </li>
+            <li>
+            <a href="https://forms.gle/PrqLqi275w5qtri97" target="_blank" id="#RSVP">RSVP</a>
+            </li>
+        </ul>
+        </nav>
         );
     }
 }
+
+
+

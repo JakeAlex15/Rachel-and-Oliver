@@ -14,14 +14,17 @@ h1 {
 	padding-top: 4rem;
 	font-size: 4rem;
 	color: rgb(0, 0, 0);
-	text-shadow: 2px 2px rgb(253, 236, 224);
+}
+
+span {
+    background-color: rgba(253, 236, 224, 0.705);
+    padding: 10px;
 }
 
 h3 {
 	font-size: 2rem;
-	color: rgb(0, 0, 0);
-	padding-top: 30px;
-	text-shadow: 2px 2px rgb(253, 236, 224);
+    color: rgb(0, 0, 0);
+    padding-top: 20px;
 }
 
 h5 {
@@ -35,10 +38,13 @@ a {
     line-height: 1em;
 }
 
+ul {
+    list-style-position: inside;
+}
 
 /* Navbar styling */
 
-.topnav {
+/* .topnav {
     display: flex;
     text-align: space-evenly;
     background-color: rgb(253, 236, 224);
@@ -69,7 +75,43 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-  }
+  } */
+nav {
+    background-color: rgb(253, 236, 224);
+    height: 80px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    background-color: rgb(253, 236, 224);
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+nav ul li {
+    color: rgb(0, 0, 0);
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Dancing Script', cursive !important;
+    font-size: 25px;
+    padding: 1em;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
 
   /* Jumbotron styling */
 
@@ -84,9 +126,9 @@ a {
 	flex-direction: column;
 	background-size: cover;
 	text-align: center;
-	background-image: url(prop.jpg);
+	background-image: url(prop8.jpg);
 	height: 48rem;
-	width: 100%;
+    width: 100%;
 }
 
 /* Note container styling (message from bride/groom) */
@@ -95,7 +137,7 @@ a {
 	background-color: rgb(253, 236, 224);
 	width: 100%;
 	text-align: center;
-	font-size: 2.5em;
+	font-size: 2.8em;
 	font-family: 'Dancing Script', cursive !important;
     font-weight: bold;
 }
@@ -145,7 +187,7 @@ a {
     background-color: rgb(253, 236, 224);
     margin: auto;
     height: auto;
-    max-width: 50%;
+    width: 100em;
     margin-right: 2em;
 }
 
@@ -172,6 +214,7 @@ a {
 
 .schedule-itinerary {
     font-size: 2.5em;
+    line-height: 1.2;
 }
 
 
@@ -181,17 +224,27 @@ a {
 
 /* Info bar at bottom */
 
+.info-container {
+    display: flex;
+}
+
+#information {
+font-size: 1.5em;
+}
+
 .info {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.596);
 	display: flex;
 	width: 94.5%;
 	height: auto;
     padding: 4em;
-	text-align: center;
+    text-align: space-evenly;
+    justify-content: space-evenly;
     background-color: rgb(253, 236, 224);
-    margin-top: 8em;
+    margin: 16em 1em 1em 1em;
     display: flex;
     flex-direction: row;
+    margin-top: 1em;
 }
 
 .info-text {
@@ -202,10 +255,36 @@ a {
 
 .info-text a {
 	color: rgb(0, 0, 0);
-    text-align: center;
 	padding: 4em;
 	font-family: 'Dancing Script', cursive !important;
-	font-size: 30px;
+    font-size: 30px;
+    margin-top: 2em;
+}
+.info-text a:hover {
+	transition: 0.5s;
+	color: cadetblue;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+    .info {
+        max-width: 800px;
+        display: flex;
+        margin: 4em 17em 6em 17em;
+        padding: 2em 1em 1em 1em;
+    }
+
+    .info-text {
+        padding: 2em 1em 1em 1em;
+        flex-direction: column;
+        display: flex;
+        margin-top: -1.5em;
+    }
+
+    .info-text a {
+        margin-top: -2em;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -230,7 +309,6 @@ a {
     .note-container {
         flex-direction: column;
         width: 100%; 
-        /* 65%, 74%, 91%, 100%  not sure which one works */
     }
     .first-set {
         margin: 5em auto 0em auto;
@@ -262,27 +340,70 @@ a {
     }
 
     .info {
-        max-width: 634px;
+        max-width: 800px;
         display: flex;
-        margin: 4em 6em 4em 6em;
+        margin: 4em 17em 6em 17em;
         padding: 2em 1em 1em 1em;
     }
 
     .info-text {
-        padding: 2em;
+        padding: 2em 1em 1em 1em;
         flex-direction: column;
         display: flex;
+        margin-top: -1.5em;
+        
+    }
+    
+    .info-text a {
+        margin-top: -2em;
     }
 }
 
 @media only screen and (max-width: 480px) {
-	nav ul {
-		height: 20rem;
-		flex-direction: column;
-		text-align: center;
-	}
-	/* nav collapsing into a column but not showing */
+    span {
+        padding: 0px;
+    }
 
+    h1 {
+        padding-top: 10px;
+        padding-bottom: 6rem;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+    
+    nav {
+        position: sticky;
+        top: 0px;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(253, 236, 224);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        
+    }
+
+    nav ul li {
+        display: block;
+        line-height: 30px;
+        padding: 0em;
+    }
+
+    nav ul li a {
+        font-size: 30px;
+        
+    }
+   
+    #check:checked ~ ul {
+        left: 0;
+    }
+	
 	.jumbotron {
 		height: 28rem;
 		flex-direction: column;
@@ -321,6 +442,7 @@ a {
     }
     .card-day-2 {
         margin: 2em auto auto auto;
+        max-width: 100%;
     }
     .cp-day-2 {
         margin: 2em auto auto auto;
@@ -340,9 +462,22 @@ a {
 
         .info-text {
             font-size: 1em;
+            margin-top: 1em;
         }
 
-        h2 {
+        .schedule {
+            padding: 2em;
+        }
+        
+        .schedule-date {
+            font-size: 1.70em ;
+        }
+
+        .schedule-itinerary {
+            font-size: 1.5em;
+        }
+
+        #information {
             font-size: 4em;
         }
 }
@@ -353,3 +488,5 @@ a {
     $tablet: 768px;
     $phone: 480px;
  */
+
+
