@@ -44,38 +44,6 @@ ul {
 
 /* Navbar styling */
 
-/* .topnav {
-    display: flex;
-    text-align: space-evenly;
-    background-color: rgb(253, 236, 224);
-    justify-content: space-evenly;
-    list-style: none;
-    padding: 2em;
-}
-
-.topnav a {
-	color: rgb(0, 0, 0);
-	text-align: center;
-	text-decoration: none;
-	font-family: 'Dancing Script', cursive !important;
-	font-size: 25px;
-}
-
-.topnav a:hover {
-	transition: 0.5s;
-	color: cadetblue;
-	font-weight: bold;
-	cursor: pointer;
-}
-
-
-.topnav .icon {
-    display: flex;
-    color: black;
-    position: absolute;
-    top: 0;
-    left: 0;
-  } */
 nav {
     background-color: rgb(253, 236, 224);
     height: 80px;
@@ -96,6 +64,13 @@ nav ul li {
 	font-family: 'Dancing Script', cursive !important;
     font-size: 25px;
     padding: 1em;
+}
+
+nav ul li a:hover {
+	transition: 0.5s;
+	color: cadetblue;
+	font-weight: bold;
+	cursor: pointer;
 }
 
 .checkbtn {

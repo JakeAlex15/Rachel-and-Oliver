@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-let navUI = document.querySelector("#nav-ul");
-let check = document.querySelector("#check");
+// let navUI = document.querySelector("#nav-ul");
+// let check = document.querySelector("#check");
 
-navUI.addEventListener("click", () => {
-    check.checked = !check.checked;
-});
+// navUI.addEventListener("click", () => {
+//     check.checked = !check.checked;
+// });
 
 export default class Navbar extends Component {
     render() {
