@@ -1,3 +1,5 @@
+/* General Styling */
+
 * {
 	border: 0;
 	padding: 0;
@@ -6,7 +8,7 @@
 
 body {
     font-size: 10px;
-    background: cadetblue;
+    background-color: rgb(200, 233, 255);
     font-family: 'Dancing Script', cursive !important;
 }
 
@@ -17,7 +19,7 @@ h1 {
 }
 
 span {
-    background-color: rgba(253, 236, 224, 0.705);
+    background-color: rgba(253, 236, 224, 0.603);
     padding: 10px;
 }
 
@@ -38,8 +40,14 @@ a {
     line-height: 1em;
 }
 
+.clickhere {
+    color: cadetblue;
+    padding: 0;
+    margin: 0;
+}
+
 ul {
-    list-style-position: inside;
+    list-style: none;
 }
 
 /* Navbar styling */
@@ -48,45 +56,34 @@ nav {
     background-color: rgb(253, 236, 224);
     height: 80px;
     width: 100%;
-}
-
-nav ul {
     display: flex;
-    background-color: rgb(253, 236, 224);
-    justify-content: space-evenly;
-    list-style: none;
+    align-items: center;
+    justify-content: space-around;
 }
 
-nav ul li {
-    color: rgb(0, 0, 0);
-	text-align: center;
-	text-decoration: none;
-	font-family: 'Dancing Script', cursive !important;
+nav .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+nav .nav-links a {
     font-size: 25px;
-    padding: 1em;
 }
 
-nav ul li a:hover {
-	transition: 0.5s;
+nav .nav-links a:hover {
+	transition: 0.3s;
 	color: cadetblue;
 	font-weight: bold;
-	cursor: pointer;
-}
-
-.checkbtn {
-    font-size: 30px;
-    color: rgb(0, 0, 0);
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
     cursor: pointer;
-    display: none;
+    border-bottom: 1.5px solid cadetblue;
 }
 
-#check {
+nav #burger {
+    font-size: 28px;
     display: none;
+    cursor: pointer;
 }
-
 
   /* Jumbotron styling */
 
@@ -123,7 +120,7 @@ nav ul li a:hover {
     margin: auto;
 }
 
-/* Schedule */
+/* Schedules and Couple Pictures */
 
 .first-set, .second-set {
     display: flex;
@@ -192,12 +189,7 @@ nav ul li a:hover {
     line-height: 1.2;
 }
 
-
-/* Times and locations - day of wedding */
-
-
-
-/* Info bar at bottom */
+/* Information Bar */
 
 .info-container {
     display: flex;
@@ -242,6 +234,8 @@ font-size: 1.5em;
 	cursor: pointer;
 }
 
+/* IPad Pro Stylings */
+
 @media only screen and (max-width: 1024px) {
     .info {
         max-width: 800px;
@@ -262,41 +256,13 @@ font-size: 1.5em;
     }
 }
 
+/* IPad Stylings */
+
 @media only screen and (max-width: 768px) {
     .checkbtn {
         display: block;
     }
 
-    nav {
-        position: sticky;
-        top: 0px;
-    }
-    nav ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: rgb(253, 236, 224);
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        flex-direction: column;
-    }
-    nav ul li {
-        display: block;
-        line-height: 30px;
-        padding: 0em;
-    }
-
-    nav ul li a {
-        font-size: 30px;
-        
-    }
-   
-    #check:checked ~ ul {
-        left: 0;
-    }
-    
     .jumbotron {
 		height: 70vh;
 		flex-direction: column;
@@ -363,6 +329,8 @@ font-size: 1.5em;
     }
 }
 
+/* Phone Styling */
+
 @media only screen and (max-width: 480px) {
     span {
         padding: 0px;
@@ -373,39 +341,30 @@ font-size: 1.5em;
         padding-bottom: 6rem;
     }
 
-    .checkbtn {
+    nav #burger {
         display: block;
-    }
-    
-    nav {
-        position: sticky;
-        top: 0px;
-    }
-    nav ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: rgb(253, 236, 224);
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-        
+        margin-left: 10em;
     }
 
-    nav ul li {
+    nav .nav-links {
         display: block;
-        line-height: 30px;
-        padding: 0em;
-    }
-
-    nav ul li a {
-        font-size: 30px;
-        
-    }
-   
-    #check:checked ~ ul {
+        position: absolute;
+        top: 0;
         left: 0;
+        height: 35vh;
+       padding: 40px;
+       width: 50%;
+       background-color: rgb(253, 236, 224);
+       transform: translateX(-500px);
+       transition: 0.3s ease-in-out;
+    }
+
+    nav .nav-links li {
+        padding: 25px;
+    }
+
+    nav .nav-links a:hover {
+        border-bottom: 0px;
     }
 	
 	.jumbotron {
@@ -486,11 +445,5 @@ font-size: 1.5em;
         }
 }
 
-/* 
-    $desktop: 1200px;
-    $laptop: 1024px;
-    $tablet: 768px;
-    $phone: 480px;
- */
 
 

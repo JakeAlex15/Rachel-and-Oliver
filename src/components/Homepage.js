@@ -3,11 +3,13 @@ import React from 'react'
 export default function Homepage() {
     return (
         <>
-        <a name="home"></a>
+        {/* Jumbotron */}
         <div className="jumbotron">
             <h1><span>Rachel and Oliver</span></h1> 
             <h3><span>November 11th, 2021 -- Key West, Flordia</span></h3>
         </div>
+
+        {/* Message From Bride/Groom */}
         <div className="main">
             <div className="note-container">
                 <a name="welcome"></a>
@@ -23,6 +25,7 @@ export default function Homepage() {
                 </p>
             </div>
 
+        {/* First Schedule and Picture */}
             <div className="first-set">
                 <div className="cp-day-1"></div>
                 <a name="schedules"></a>
@@ -33,18 +36,19 @@ export default function Homepage() {
                             <br />
                             <ul>
                                 Welcome to Rachel and Oliver's Wedding Website! <br /> <br />
-                                <li>This event has been rescheduled for November 11th, 2021 due to COVID-19 </li><br /> <br />
-                                <li>The wedding will take place at The Southernmost Beach Resort in beautiful Key West, Florida </li><br /> <br />
-                                <li>The wedding and ideal lodging are The Southernmost Beach Resort*</li> <br /> <br />
-                                <li>There are plenty of activites in and around Key West before the wedding, and Key West International Airport is only 10 minutes away* </li><br /> <br />
+                                <li>This event has been rescheduled for November 11th, 2021 due to COVID-19 </li><br /> 
+                                <li>The wedding will take place at The Southernmost Beach Resort in beautiful Key West, Florida </li><br /> 
+                                <li>There are plenty of activites in and around Key West before the wedding, and Key West International Airport is only 10 minutes away* </li><br /> 
+                                <li>The Southernmost Beach Resort (link below)*, The <a href="https://www.keywestsouthwinds.com/" target="_blank">Southwinds Motel (<span class="clickhere">click here to browse rooms</span>)</a>, and many other lodging options are avaiable and within walking distance to the wedding venue</li><br />
                                 <br />
-                                *All of the links are available in the "information" bar at the bottom of the page
+                                *All of the links are available in the "information" bar at the bottom of the page (Southwinds Motel link directly above)<br />
                             </ul>
                             </p>
                     </div>
                 </div>
             </div>
 
+        {/* Second Schedule and Picture */}
             <div className="second-set">
                 <div className="card-day-2">
                     <div className="schedule"> 
@@ -82,12 +86,13 @@ export default function Homepage() {
                 </div>  
                 <div className="cp-day-2"></div>
             </div>
+
+            {/* Information Bar */}
             <div className="info-container">
             <div className="info">
             <div className="info-text">
-                        <div name="information" id="information">Information</div> 
+            <div name="information" id="information">Information</div> 
                     <br />
-                   
                         <a href="https://www.tripadvisor.com/Attractions-g34345-Activities-Key_West_Florida_Keys_Florida.html" target="_blank" id="#activities" className="activities-button">Activites</a> 
                         <a href="https://nam01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsouthernmostbeachresort.reztrip.com%2Fext%2FpromoRate%3Fproperty%3D729%26mode%3Db%26pm%3Dtrue%26sr%3D585268%26vr%3D3%26accessCode%3DFAMILYAFFAIR&data=02%7C01%7C%7C1857dd49b80945d92daa08d8089e6a3a%7C3b290724ee0b4b3a88d66a1172257251%7C1%7C0%7C637268823784405097&sdata=flama2qc594kLtf4VLw2YZk3gvyjpvq6ECKebqRIZ9E%3D&reserved=0" target="_blank" id="#hotels" className="hotels-button">Hotels</a> 
                         <a href="https://eyw.com/" target="_blank" id="#travel" className="travel-button">Travel</a>
@@ -99,8 +104,8 @@ export default function Homepage() {
         </>
     );
 }
+// The End :) 
 
-//routing
-//info card -- things to do, hotels, travel, rsvp (google form)
+//Google Form Response Link:
 //https://docs.google.com/forms/d/1g5aLWJqpFOTORj7MS9CpBWTCalJ1arjZSJPoTBaxc6M/edit
 
